@@ -9,9 +9,9 @@
 }
 .rain_coat {
     position: absolute;
-    width: 400px;
-    right: 100px;
-    bottom: 190px;
+    width: 350px;
+    right: 101px;
+    bottom: 168px;
     opacity: 0;
     animation-name: flyUp;
     animation-duration: 2s;

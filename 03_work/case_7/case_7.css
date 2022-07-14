@@ -5,7 +5,7 @@
 .magic_hands {
     position: absolute;
     width: 350px;
-    right: 170px;
+    right: 120px;
     top: 173px;
     opacity: 0;
     animation-name: flyRight;

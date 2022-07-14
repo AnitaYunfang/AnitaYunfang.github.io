@@ -12,8 +12,8 @@
 }
 .banner_slogan {
     position: absolute;
-    right: 150px;
-    top: 379px;
+    right: 108px;
+    top: 300px;
     opacity: 0;
     animation-name: flyUp;
     animation-duration: 2s;
@@ -23,7 +23,9 @@
 span.title-line {
     opacity: 0.2;
 }
-
+.work.case_5 .case_catalogy {
+    margin-top: 100px;
+}
 @keyframes flyUp{
 0%{
     transform: translateY(30px);
