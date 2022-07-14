@@ -1,0 +1,96 @@
+/*右側小圖*/
+.case_8 .main_website .service_1 {
+    width: 200px;
+    position: absolute;
+    left: 9px;
+    top: 78px;
+    animation-name: moveUpDown;
+    animation-duration: 10s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.case_8 .main_website .service_2 {
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    animation-name: moveUpDown;
+    animation-duration: 15s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/*右側文字*/
+.main_slogan h6 {
+    writing-mode: tb;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.main_slogan h2 {
+    writing-mode: tb;
+    letter-spacing: 2px;
+    font-size: 45px;
+    transform: translate(10px,29px);
+}
+.main_website .main_slogan {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+.main_website .sub_slogan {
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    opacity: 0.6;
+    position: absolute;
+    right: 140px;
+    bottom: 280px;
+    transform: scale(0.7);
+}
+
+/*網站色碼*/
+.color-item.first img {
+    width: 100%;
+}
+.color-item.first {
+    overflow: hidden;
+}
+
+/*左側標語*/
+.main-title h4 .blank_word:after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 1px;
+    background: #ccc;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+.main-title h4 .blank_word {
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    height: 20px;
+}
+
+
+/*slogan animation*/
+@keyframes moveUpDown{
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(30px);        
+    }
+    75%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

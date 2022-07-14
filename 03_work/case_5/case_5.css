@@ -1,0 +1,36 @@
+/*slogan*/
+.banner_slogan span {
+    color: #1b4c8a;
+    font-size: 20px;
+}
+
+.banner_slogan h4 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+}
+.banner_slogan {
+    position: absolute;
+    right: 150px;
+    top: 379px;
+    opacity: 0;
+    animation-name: flyUp;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+span.title-line {
+    opacity: 0.2;
+}
+
+@keyframes flyUp{
+0%{
+    transform: translateY(30px);
+    opacity: 0;
+}
+100%{
+    transform: translateY(0);
+    opacity: 1;
+}
+}

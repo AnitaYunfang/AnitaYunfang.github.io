@@ -1,0 +1,22 @@
+/*banne_slogan*/
+.slogan_pic {
+    width: 60px;
+    position: absolute;
+    right: 246px;
+    top: 175px;
+    opacity: 0;
+    animation-name: flyUp;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes flyUp{
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

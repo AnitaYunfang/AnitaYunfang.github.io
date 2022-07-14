@@ -1,0 +1,26 @@
+/*banner_hands*/
+.magic_hands img{
+    width:100%;
+}
+.magic_hands {
+    position: absolute;
+    width: 350px;
+    right: 170px;
+    top: 173px;
+    opacity: 0;
+    animation-name: flyRight;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flyRight{
+    0%{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    }

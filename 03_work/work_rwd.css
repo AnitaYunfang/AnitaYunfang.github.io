@@ -1,0 +1,172 @@
+@media (max-width: 1800px) {
+/*1800*/
+
+}
+
+@media (max-width: 1700px) {
+/*1700px*/
+.switch_button {
+    right: 14.5%;
+}
+}
+
+
+@media (max-width: 1600px) {
+/*1600px*/
+.switch_button {
+    right: 15%;
+}
+.open_list .list_item a .list_title {
+    font-size: 17px;
+}
+.work_list .main.second {
+    padding: 180px 5% 0 5%;
+}
+}
+
+
+@media (max-width: 1500px) {
+/*1500px*/
+.switch_button {
+    right: 15.5%;
+}
+}
+
+
+@media (max-width: 1400px) {
+/*1400px*/
+.swiper-button-next {
+    right: 9% !important;
+}
+.swiper-button-prev {
+    left: 9% !important;
+}
+.swiper-button-prev:after {
+    font-size: 100px;
+}
+.swiper-button-next:after {
+    font-size: 100px;
+}
+}
+
+
+
+@media (max-width: 1200px) {
+/*1200px*/
+.switch_button {
+    right: 16%;
+}
+.swiper-button-next {
+    right: 5% !important;
+}
+.swiper-button-prev {
+    left: 5% !important;
+}
+}
+
+
+@media (max-width: 1199px) {
+/*1199px*/
+.open_list {
+    width: calc(100%/2 - 40px);
+}
+.swiper-button-prev:hover:after {
+    left:0px;
+    transition: 0.8s;
+}
+.swiper-button-next:hover:after{
+    right:0px;
+    transition: 0.8s;
+}
+.open_list .list_item a .list_title {
+    font-size: 19px;
+}
+.fix-scroll {
+    right: 10px;
+}
+}
+
+@media (max-width: 1100px) {
+/*1100px*/
+.switch_button {
+    right: 17%;
+}
+.swiper-button-next {
+    right: 1% !important;
+}
+.swiper-button-prev {
+    left: 1% !important;
+}
+.swiper-button-prev:after {
+    font-size: 80px;
+}
+.swiper-button-next:after {
+    font-size: 80px;
+}
+}
+
+@media (max-width: 991px) {
+/*991px*/
+.switch_button {
+    right: 17.5%;
+}
+.Canvas {
+    transform: scale(0.8);
+}
+.fix-scroll {
+    right: 3px;
+}
+}
+
+@media (max-width: 800px) {
+/*800px*/
+.Canvas {
+    transform: scale(0.7);
+}
+}
+
+
+@media (max-width: 700px) {
+/*700px*/
+.work_list .main.first.active{
+    display: none !important;
+}
+.work_list .main.second{
+    display: flex !important;
+}
+.switch_button {
+    display: none;
+}
+.work_list .header-menu {
+    background: #ebebeb !important;
+}
+.work_list .main.first.active~.sub_menu {
+    background: #ebebeb;
+    margin-top: 0;
+}
+}
+
+
+@media (max-width: 600px) {
+/*600px*/
+.open_list {
+    width: calc(100%/2 - 20px);
+    margin: 0 10px 50px 10px;
+}
+.header-menu .logo a {
+    font-size: 30px;
+}
+.header-menu {
+    height: 70px;
+}
+.header-menu .container {
+    padding: 10px 10%;
+}
+.work_list .main.second {
+    padding: 120px 5% 0 5%;
+}
+.open_list .list_item a .list_title {
+    font-size: 16px;
+}
+
+}

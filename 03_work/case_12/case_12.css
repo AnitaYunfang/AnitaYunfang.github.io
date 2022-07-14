@@ -1,0 +1,26 @@
+/*標語*/
+.main_website .main_word img {
+    width: 100%;
+}
+.main_website .main_word {
+    width: 300px;
+    position: absolute;
+    top: 187px;
+    left: 50%;
+    margin-left: -150px;
+    opacity: 0;
+    animation-name: flyUp;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes flyUp{
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

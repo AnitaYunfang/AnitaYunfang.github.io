@@ -1,0 +1,300 @@
+html{
+    background-color: #ebebeb;
+}
+.main {
+    background-color: #ebebeb;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 0% 10%;
+    position: relative;
+    max-width: 2200px;
+    margin: 100px auto 0 auto;
+}
+.sub_menu{
+    background-color: #ebebeb;
+    padding:10px 0px;
+}
+.sub_menu ul li a{
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+    display: block;
+    text-align: center;
+    color: #666;
+    padding: 5px 10px;
+    position: relative;
+    transition: 0.3s;
+}
+.sub_menu ul li a:hover{
+    color:#333;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.sub_menu ul li{
+    list-style: none;
+}
+.sub_menu ul {
+    display: flex;
+    padding-left: 0%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+}
+.sub_menu ul li a:after{
+    content: "/";
+    position: absolute;
+    color: #999;
+    left: -3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sub_menu ul li:nth-child(1) a:after{
+    display: none;
+}
+.work .menu-list ul {
+    flex-direction: column;
+    min-width: 350px;
+    width:25%;
+    max-width: 540px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    align-items: flex-start;
+    padding: 200px 50px 0 50px;
+    background: #f1f1f1;
+}
+.work .menu-list input ~ ul.header_nav {
+    transform: translateX(100%);
+    transition: 1s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.work .menu-list input:checked ~ ul.header_nav {
+    transform: none;
+    transition: 0.8s;
+    box-shadow: 1px 0px 1px 1px #999;
+}
+.work .menu-list ul li a {
+    font-weight: 300;
+    font-size: 30px;
+}
+/*作品上方文字區塊*/
+.left_name {
+    width: 40%;
+    padding-right: 100px;
+    padding-top:40px;
+    position:relative;
+    margin-top: 120px;
+}
+.left_name:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #ccc;
+    top: 0;
+    right: -11%;
+    animation-name: linegrow;
+    animation-duration: 1.2s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.left_name:before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    border-radius: 3px;
+    background: #ccc;
+    top: -2px;
+    animation-name: flyup2;
+    animation-duration: 1s;
+    animation-delay: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.right_pic{
+    width:60%;
+    z-index:1;
+    position:relative;
+}
+.brands_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+.main-title h1 {
+    margin-bottom: 5px;
+}
+/*網站連結*/
+.outlink a {
+    display: block;
+    width: 40px;
+    margin-right:10px
+}
+.image_link a {
+    display: block;
+    width: 40px;
+}
+.link-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:20px;
+}
+.link-btn a:hover {
+    transform: translateY(-6px);
+    transition: 0.3s;
+}
+.link-btn a {
+    transform: translateY(0);
+    transition: 0.3s;
+}
+
+/*色票展示*/
+.color-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.color-block {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.color-item.first {
+    z-index: 11;
+}
+.color-item.second {
+    z-index: 1;
+    transform: translateX(-8px);
+}
+.color-item.third {
+    transform: translateX(-16px);
+}
+/*網站分類*/
+.case_catalogy {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    color: #444;
+    margin-top: 150px;
+}
+/*介紹內文*/
+.content_block {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    color:#444;
+    margin-top:50px;
+}
+.main-text{
+    animation-name: txt_show;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.link_block{
+    animation-name: txt_show;
+    animation-duration: 1.5s;
+    animation-delay: 1.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+/*動態*/
+@keyframes linegrow{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 111%;
+    }
+}
+@keyframes flyup2{
+    0%{
+        opacity:0;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+@keyframes txt_show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*下方文字區塊*/
+.inter_block {
+    margin-top: 100px;
+}
+.inter_logo{
+    width: 300px;
+    margin: 0px auto;
+}
+
+/*icon未有連結的狀態*/
+.no_link a:hover {
+    transform: translateY(0);
+}
+.no_link a img {
+    opacity: 0.3;
+}
+
+
+@media screen and (max-width: 1700px){
+/*1700px*/
+.main-title h1 {
+    font-size: 50px;
+}
+.main-title h4 {
+    font-size: 20px;
+}
+.brands_block .left_name {
+    padding-right: 60px;
+}
+.content_block {
+    font-size: 14px;
+}
+
+/*case9*/
+.case_9 .case_catalogy {
+    margin-top: 50px;
+}
+
+}
+
+
+/*介紹暫時隱藏*/
+.inter_block {
+    display: none;
+}
+.work body {
+    height: calc(100vh - 148px);
+}
+.work.work_list body {
+    height: auto;
+}

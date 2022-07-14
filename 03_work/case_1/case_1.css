@@ -1,0 +1,251 @@
+/*上方整體介紹*/
+
+/*案件介紹文字區塊*/
+.inter_logo{
+    width: 300px;
+    margin: 0px auto;
+}
+/*banner slogan*/
+.banner_slogan h3:after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    background: #ff6800;
+    left: 5px;
+    bottom: 0;
+}
+.banner_slogan h3 {
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 42px;
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 15px;
+    animation-name: flyup;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.banner_slogan {
+    position: absolute;
+    left: 130px;
+    top:280px;
+}
+
+.banner_slogan h6 {
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: #dbdbdb;
+    animation-name: flyup;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/*cloud*/
+.left_cloud {
+    position: absolute;
+    top: 39%;
+    left: -45px;
+    animation-name: movingcloud;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    opacity:0;
+}
+.right_cloud {
+    position: absolute;
+    top: 30%;
+    animation-name: movingcloud2;
+    animation-iteration-count: infinite;
+    animation-duration: 70s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+    opacity:0;
+}
+
+/*標語動態*/
+@keyframes flyup{
+    0%{
+        opacity:0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+/*浮動雲*/
+/*-----第一雲-----*/
+
+@keyframes movingcloud
+{
+0% {left:-9%;opacity:0}
+3% {opacity:1}
+50% {opacity:0}
+100%{left:109%;opacity:0.5}
+}
+
+@-moz-keyframes movingcloud /* Firefox */
+{
+0% {left:-9%;opacity:0}
+3% {opacity:1}
+50% {opacity:0}
+100%{left:109%;opacity:0.5}
+}
+
+@-webkit-keyframes movingcloud /* Safari 和 Chrome */
+{
+0% {left:-9%;opacity:0}
+3% {opacity:1}
+50% {opacity:0}
+100%{left:109%;opacity:0.5}
+}
+
+/*-----第二雲-----*/
+
+@keyframes movingcloud2
+{
+0% {left:-10%;opacity:0}
+3% {opacity:1}
+50% {opacity:0.5}
+100%{left:109%;opacity:0.3}
+}
+
+@-moz-keyframes movingcloud2 /* Firefox */
+{
+0% {left:-10%;opacity:0}
+3% {opacity:1}
+50% {opacity:0.5}
+100%{left:109%;opacity:0.3}
+}
+
+@-webkit-keyframes movingcloud2 /* Safari 和 Chrome */
+{
+0% {left:-10%;opacity:0}
+3% {opacity:1}
+50% {opacity:0.5}
+100%{left:109%;opacity:0.3}
+}
+
+@-o-keyframes movingcloud2 /* Opera */
+{
+0% {left:-10%;opacity:0}
+3% {opacity:1}
+50% {opacity:0.5}
+100%{left:109%;opacity:0.3}
+}
+
+/*content*/
+.first_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 200px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 100px;
+}
+img.arrow_pic {
+    order: 1;
+    transform: translate(-20px, -80px);
+}
+img.new_web {
+    margin-left: -250px;
+    order: 2;
+    transform: translateY(0);
+    box-shadow: 5px 5px 21px -7px #898989;
+    transition: 0.3s;
+}
+img.old_web {
+    transform: translateY(100px);
+    order: 3;
+    transition: 0.3s;
+}
+img.old_web:hover ~ img.new_web {
+    transform: initial;
+    transition: 0.3s;
+    box-shadow: none;
+}
+img.old_web:hover{
+    box-shadow: 5px 5px 21px -7px #898989;
+    transition: 0.3s;
+}
+.content_block .right_txt {
+    padding-bottom: 63px;
+}
+.content_block .right_txt ol li {
+    font-size: 18px;
+    line-height: 1.8em;
+    font-weight:500;
+}
+
+/*loading section*/
+.left_loading img {
+    mix-blend-mode: darken;
+}
+.second_content .right_txt h6 {
+    font-size: 18px;
+    line-height: 1.8em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+}
+.second_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #ccc;
+}
+.second_content .left_loading {
+    width: 60%;
+    text-align: center;
+}
+.second_content .right_txt {
+    width:40%;
+    text-align: left;
+}
+.second_content .right_txt span {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+}
+
+/*rwd section*/
+.third_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.third_content .left_pic {
+    width: 60%;
+    text-align: center;
+}
+.third_content .right_txt {
+    width: 40%;
+    text-align: left;
+}
+.third_content .right_txt h6 {
+    font-size: 18px;
+    line-height: 1.8em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+}
+.third_content .right_txt span {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+}

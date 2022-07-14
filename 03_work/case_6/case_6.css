@@ -1,0 +1,31 @@
+/*顏色*/
+.work.case_6 .color-item.first {
+    overflow: hidden;
+}
+
+/*banner_pic*/
+.rain_coat img {
+    width: 100%;
+}
+.rain_coat {
+    position: absolute;
+    width: 400px;
+    right: 100px;
+    bottom: 190px;
+    opacity: 0;
+    animation-name: flyUp;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flyUp{
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    }

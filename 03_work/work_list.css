@@ -1,0 +1,1082 @@
+/*回上頁按鈕*/
+.work_list .back_btn {
+    display: none;
+}
+/*listpage*/
+.work_list .main {
+    margin-top: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.work_list .header-menu {
+    background: rgb(255 255 255 / 20%);
+}
+.work_list span.ham_line{
+    background-color: #111;
+}
+.work_list .sub_menu {
+    background: #e5e5e5;
+    bottom: 0;
+    width: 100%;
+}
+.work_list .sub_menu ul li a:after {
+    color: #666;
+}
+.work_list .main.first.active~.sub_menu{
+    background:rgb(230 230 230 / 20%);
+    margin-top: -48px;
+}
+.work_list .header-menu.active {
+    background:#f1f0f0;
+}
+.work_list .header-menu.active .menu-list ul.header_nav {
+    background-color: #f1f0f0 !important;
+}
+.work_list .header-menu.active.is-scroll {
+    box-shadow: 1px 1px 10px -3px rgb(0 0 0 / 50%);
+}
+.header-menu.active .logo a {
+    color: #111 !important;
+}
+.switch_button.active .button_item img.b_img {
+    filter: brightness(0);
+}
+.switch_button.active:after {
+    background: #111 !important;
+}
+.work_list .header-menu.active span.ham_line {
+    background-color: #111111 !important;
+}
+.work.work_list .sub_menu.active ul li a {
+    color: #666 !important;
+}
+.work.work_list .sub_menu.active ul li a.change-footer:after {
+    color: #666 !important;
+}
+/*列表切換出現動態*/
+.work_list .main.second.active {
+    display: flex;
+    transition: 0.3s;
+    animation-name: list_fly;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.work_list .main.first {
+    display: none;
+    transition: 0.3s;
+}
+.work_list .main.first.active {
+    transition: 0.3s;
+    display: block;
+    animation-name: list_fly;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes list_fly{
+    0%{transform: translateY(50px);opacity:0;}
+    100%{transform: translateY(0px);opacity:1;}
+}
+
+
+/*切換換色*/
+.work.work_list .menu-list ul li a.change-color {
+    color: #fff;
+}
+.work.work_list .sub_menu ul li a.change-footer:after {
+    color: #fff;
+}
+/*list content*/
+.case_logo {
+    width: 180px;
+}
+.Canvas-header-logo{
+    display: none;
+}
+.Car.case_1 .case_logo {
+    margin-left: 3px;
+}
+
+/*展開列表*/
+.work_list .list_item a > .list_image> img {
+    transform: translateY(0px);
+    transition: 0.3s;
+}
+.work_list .list_item a:hover > .list_image> img {
+    transform: translateY(-7px);
+    transition: 0.3s;
+}
+.work_list .main.second {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0 10%;
+    padding-top: 180px;
+    background:#f1f1f1;
+    transition:0.3s;
+}
+.open_list .list_item a .list_image img {
+    width: 100%;
+}
+.open_list {
+    width: calc(100%/3 - 40px);
+    margin: 0 20px 80px 20px;
+}
+.open_list .list_item a .list_title {
+    font-size: 19px;
+    color: #333;
+    text-align: center;
+    line-height: 1.8em;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.open_list .list_item a:hover .list_title {
+    color: #000;
+    transition: 0.3s;
+    font-weight: 500;
+}
+/*切換按鈕*/
+.switch_button {
+    position: fixed;
+    top: 32px;
+    right: 14%;
+    z-index: 111;
+    display: flex;
+    flex-direction: row;
+    padding-right: 33px;
+}
+.switch_button:after {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 20px;
+    right: 0;
+    bottom: 50%;
+    background: #111;
+    transform: translateY(50%);
+}
+.switch_button .button_item img {
+    width: 100%;
+    filter: brightness(0);
+}
+.switch_button .button_item {
+    width: 45px;
+    padding: 3px 6px 0px 6px;
+}
+.switch_button .button_item img.b_img {
+    filter: brightness(100);
+}
+.switch_button.change_color:after {
+    background: #ccc;
+}
+.switch_button .button_item:hover {
+    cursor: pointer;
+}
+/*Swiper原样式 */
+.swiper-button-next{
+    background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+}
+.swiper-button-prev{
+    background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-button-next:after {
+    content: ">";
+    position: absolute;
+    color: #fff;
+    font-size: 150px;
+    font-family: 'Dosis', sans-serif;
+    text-shadow: 4px 5px 10px rgb(0 0 0 / 30%);
+    line-height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: -23px;
+    transform: scaleY(1.5);
+    transition: 0.3s;
+    right:0px;
+}
+.swiper-button-next {
+    right: 12% !important;
+    width: 70px !important;
+    height: 70px !important;
+    background-size: contain !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background-image: none !important;
+    margin: 0 !important;
+}
+.swiper-button-prev:after {
+    content: "<";
+    position: absolute;
+    color: #fff;
+    font-size: 150px;
+    font-family: 'Dosis', sans-serif;
+    text-shadow: 4px 5px 10px rgb(0 0 0 / 30%);
+    line-height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top:-23px;
+    transform: scaleY(1.5);
+    transition: 0.3s;
+    left:0;
+}
+.swiper-button-prev:hover:after {
+    left:-30px;
+    transition: 0.8s;
+}
+.swiper-button-next:hover:after{
+    right:-30px;
+    transition: 0.8s;
+}
+.swiper-button-prev {
+    left: 12% !important;
+    width: 70px !important;
+    height: 70px !important;
+    background-size: contain !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background-image: none !important;
+    margin: 0 !important;
+}
+
+/*car_link*/
+.Car-link {
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 1.4em;
+    transition: 0.3s;
+}
+.Car-link:hover{
+    transition: 0.3s !important;
+    color: #333 !important;
+}
+.Car-link:hover img{
+    filter: contrast(0.8);
+    transition: 0.3s;
+}
+.Car-link img {
+    width: 15px;
+    filter: contrast(0.1);
+    margin-right: 10px;
+}
+
+/*case_1*/
+.Car--niva.case_1 .Car-image {
+    background: transparent url(/03_work/case_1/image/190321-windowgirl-8bit.png) 0 0 no-repeat;
+    background-size: contain;
+    width: 398px;
+    height: 400px;
+    margin: 0;
+    top: 70px;
+    right: 0;
+}
+.Car.case_1 .Car-decor.one::before {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    transform: translateX(60%);
+    background: #001e62;
+}
+
+/*case_2*/
+.Car--niva.case_2 .Car-image {
+    background: transparent url(/03_work/case_2/image/about-img.png) 0 0 no-repeat;
+    height: 443px;
+    width: 370px;
+    background-size: contain;
+    right: 25px;
+    margin: 0;
+    bottom: 0;
+    top: initial;
+}
+.Car.case_2 .Car-decor.one {
+    right: -1px;
+    width: 55%;
+}
+
+.Car.case_2 .Car-decor.one::before {
+    height: 100%;
+    position: absolute;
+    background: #000;
+    transform: none;
+    clip-path: polygon(49% 0%, 100% 0, 100% 100%, 0% 100%);
+    width: 100%;
+}
+
+/*case_3*/
+.Car--niva.case_3 .Car-image {
+    background: transparent url(/03_work/case_3/image/210722_bg.png) 0 0 no-repeat;
+    height: 400px;
+    width: 410px;
+    background-size: contain;
+    right: 25px;
+    margin: 0;
+    bottom: 42px;
+    top: initial;
+}
+.Car--niva.case_3 .Car-decor.one::before {
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    transform: skewX(0deg);
+    position: absolute;
+    background-image: url(/03_work/case_3/image/deliver_bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+.Car--niva.case_3 .Car-decor.one {
+    right: 0;
+    width: 53%;
+}
+.Car--niva.case_3:after {
+    content: "";
+    position: absolute;
+    background-image: url(/03_work/case_3/image/flower-02.png);
+    background-repeat: no-repeat;
+    width:222px;
+    height: 127px;
+    background-size: contain;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+    bottom:0px;
+}
+
+/*case4*/
+.Car.Car--niva.case_4:after {
+    content: "";
+    position: absolute;
+    background-image: url(/03_work/case_4/image/banner_deco.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    bottom: 20px;
+    width: 139px;
+    height: 184px;
+    z-index: -1;
+    opacity: 0.3;
+}
+.Car--niva.case_4 .Car-image.first {
+    background: transparent url(/03_work/case_4/image/about_pic-1.jpeg) 0 0 no-repeat;
+    height: 284px;
+    width: 241px;
+    background-size: contain;
+    right: 191px;
+    margin: 0;
+    bottom: 50px;
+    top: initial;
+}
+.Car--niva.case_4 .Car-image.second {
+    background: transparent url(/03_work/case_4/image/about_pic-2.jpeg) 0 0 no-repeat;
+    height: 223px;
+    width: 150px;
+    background-size: contain;
+    right: 30px;
+    margin: 0;
+    top:37px;
+}
+.case_4 .pic1_text {
+    position: absolute;
+    top: 37px;
+    width: 238px;
+    height: 117px;
+    border: 1px solid #888;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    right: 152px;
+}
+.case_4 .pic1_text span.slogan_text {
+    color: #888;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 9px;
+}
+.case_4 .pic1_text h3 {
+    color: #888;
+    font-size: 15px;
+}
+.Car--niva.case_4 .Car-decor::before{
+    display: none !important;
+}
+.Car--niva.case_4 .Car-decor.two {
+    right: 30px;
+}
+.sq_two {
+    width: 150px;
+    height: 178px;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    border: 1px solid #ce9f1c;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sq_two img {
+    width: 80%;
+}
+.sq_two h5 {
+    font-size: 14px !important;
+    color: #c3961b;
+    margin-top: 17px;
+}
+/*case5*/
+.Car--niva.case_5 .Car-image {
+    background: transparent url(/03_work/case_5/image/service-img2.png) 0 0 no-repeat;
+    width: 403px;
+    height: 476px;
+    background-size: contain;
+    top: 20px;
+    right: 0;
+    margin: 0;
+}
+.Car--niva.case_5 .Car-decor::before {
+    background: #de7329;
+}
+
+/*case6*/
+.case_6 .Car-name {
+    margin-left: -6px;
+}
+.case_6 .case_logo {
+    margin-left: -6px;
+}
+.Car--niva.case_6 .Car-image {
+    background: transparent url(/03_work/case_6/image/en_01.jpeg) 0 0 no-repeat;
+    height: 400px;
+    width: 400px;
+    background-size: contain;
+    right: 50px;
+    margin: 0;
+    bottom: 50px;
+    top: initial;
+    border-radius: 50%;
+}
+.Car--niva.case_6 .Car-image:after {
+    content: "";
+    position: absolute;
+    width: 414px;
+    height: 414px;
+    border-radius: 50%;
+    border: 1px solid #fe0502;
+    top: -7px;
+    left: -7px;
+}
+.Car--niva.case_6 .Car-decor.one::before {
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    transform: skewX(0deg);
+    position: absolute;
+    background-image: url(/03_work/case_6/image/white_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    opacity: 0.5;
+    background-position-x: right;
+}
+.Car--niva.case_6 .Car-decor.one {
+    right: 52px;
+    width: 45%;
+}
+
+/*case7*/
+.case_7 .case_logo img {
+    filter: brightness(0);
+}
+.Car--niva.case_7 .Car-decor::before {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transform: skewX(0deg);
+    border-radius: 50%;
+}
+.Car--niva.case_7 .Car-decor.one {
+    width: 300px;
+    height: 300px;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%) !important;
+}
+.Car--niva.case_7 .Car-image {
+    background: transparent url(/03_work/case_7/image/banner_hand.png) 0 0 no-repeat;
+    height: 218px;
+    width: 326px;
+    background-size: contain;
+    right: 34px;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-46%) !important;
+}
+/*case8*/
+.Car--niva.case_8 .Car-image {
+    background: transparent url(/03_work/case_8/image/list_pic.png) 0 0 no-repeat;
+    height: 100%;
+    width: 385px;
+    background-size: contain;
+    right: 30px;
+    margin: 0;
+    top: 0;
+}
+.Car--niva.case_8 .Car-decor::before {
+    background: transparent;
+    transform: skewX(0deg);
+}
+/*case9*/
+.case_9 .case_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    margin-left: 16px;
+}
+.case_9 .case_logo img:nth-child(1) {
+    width: 25px;
+    margin-right: 10px;
+}
+.case_9 .Car-name {
+    margin-left: -5px;
+}
+.Car--niva.case_9 .Car-image {
+    background: transparent url(/03_work/case_9/image/pp.png) 0 0 no-repeat;
+    height: 100%;
+    width: 629px;
+    background-size: contain;
+    right: 0px;
+    margin: 0;
+    bottom: 0px;
+    top: initial;
+}
+/*case10*/
+.Car--niva.case_10 .Car-image {
+    background: transparent url(/03_work/case_10/image/brands_doctor_2.png) 0 0 no-repeat;
+    height: 450px;
+    width: 376px;
+    background-size: contain;
+    right: 15px;
+    margin: 0;
+    bottom: 0px;
+    top: initial;
+}
+.Car--niva.case_10 .Car-decor::before {
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    background: #1c90ff;
+    transform: skewX(0deg);
+}
+.Car--niva.case_10 .Car-decor.one {
+    clip-path: polygon(0 0, 61% 0, 100% 100%, 31% 100%);
+    width: 50%;
+    right: 0;
+}
+
+/*case11*/
+.case_11 .Car-name {
+    letter-spacing: 0px;
+    font-size: 45px;
+}
+.case_11 .case_logo {
+    width: 80px;
+}
+.Car--niva.case_11 .Car-image {
+    background: transparent url(/03_work/case_11/image/meal_2-1.png) 0 0 no-repeat;
+    height: 330px;
+    width: 300px;
+    background-size: contain;
+    right: 30px;
+    margin: 0;
+    bottom: 50px;
+    top: initial;
+}
+.Car--niva.case_11 .Car-decor::before {
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    background: hwb(0deg 7% 93% / 20%);
+    transform: skewX(0deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.Car--niva.case_11 .Car-decor:after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid rgb(17 17 17 / 10%);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 52px;
+}
+.Car--niva.case_11 .Car-decor.one {
+    right: 0;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    width: 59%;
+}
+.open_list.case_11 .list_item a .list_title {
+    letter-spacing: 0;
+}
+/*case12*/
+.Car--niva.case_12 .case_logo {
+    width: 80px;
+}
+.Car--niva.case_12 .Car-image {
+    background: transparent url(/03_work/case_12/image/1632473912.png) 0 0 no-repeat;
+    height: 100%;
+    width: 586px;
+    background-size: contain;
+    right: -120px;
+    margin: 0;
+    bottom: 0px;
+    top: initial;
+}
+/*case13*/
+.Car--niva.case_13 .case_logo {
+    width: 200px;
+}
+.Car--niva.case_13 .Car-decor::before {
+    width: 100%;
+    height: 100%;
+    transform: skewX(0deg);
+    background: url(/03_work/case_13/image/p_bg2.png)no-repeat;
+    background-size: cover;
+}
+.Car--niva.case_13 .Car-decor.one {
+    right: 0;
+    clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
+    width: 60%;
+}
+.Car--niva.case_13 .Car-image {
+    background: transparent url(/03_work/case_13/image/product33.png) 0 0 no-repeat;
+    height: 450px;
+    width: 450px;
+    background-size: contain;
+    right: 0;
+    margin: 0;
+    bottom: -9px;
+    top: initial;
+}
+
+/*case14*/
+.Car--niva.case_14 .Car-name {
+    font-size: 40px;
+}
+.Car--niva.case_14 .Car-decor::before {
+    width: 100%;
+    content: '';
+    background: url(/03_work/case_14/image/dust_scratches.png);
+    background-size: cover;
+    transform: skewX(0deg);
+}
+.Car--niva.case_14 .Car-decor.one {
+    right: 0;
+    width: 60%;
+    clip-path: polygon(80% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+.Car--niva.case_14 .Car-image {
+    background: transparent url(/03_work/case_14/image/pic2.png) 0 0 no-repeat;
+    height: 450px;
+    width: 331px;
+    background-size: contain;
+    right: 69px;
+    margin: 0;
+    top: -20px;
+}
+/*case15*/
+/*.Car.Car--niva.case_15:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2e2e2e;
+    top: 0;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 30%, 100% 70%, 0% 100%);
+}*/
+.Car.Car--niva.case_15 {
+    background: #262626;
+    z-index: -1;
+}
+.Car.Car--niva.case_15 .case_logo img {
+    filter: brightness(100);
+}
+.Car.Car--niva.case_15 h1.Car-name {
+    background: radial-gradient(circle at 56% 102%, #fad995 0%, #fff 1%, #b47f1c 45%,#fad995 60%,#f5b116 100%);
+    background: -moz-radial-gradient(circle at 56% 102%, #fad995 0%, #fff 1%, #b47f1c 45%,#fad995 60%,#f5b116 100%);
+    background: -o-radial-gradient(circle at 56% 102%, #fad995 0%, #fff 1%, #b47f1c 45%,#fad995 60%,#f5b116 100%);
+    background: -webkit-radial-gradient(circle at 56% 102%, #fad995 0%, #fff 1%, #b47f1c 45%,#fad995 60%,#f5b116 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.Car.Car--niva.case_15 .Car-moto {
+    color: #ccc;
+}
+.Car.Car--niva.case_15 .Car-link:hover {
+    transition: 0.3s !important;
+    color: #fff !important;
+}
+.Car.Car--niva.case_15 .Car-link:hover img {
+    filter: contrast(0);
+    transition: 0.3s;
+}
+.Car--niva.case_15 .Car-image {
+    background: transparent url(/03_work/case_15/image/list_pics.jpg) 0 0 no-repeat;
+    height: 369px;
+    width: 383px;
+    background-size: contain;
+    right: 38px;
+    margin: 0;
+    top: 65px;
+}
+.Car--niva.case_15 .Car-decor::before {
+    background: #b83413;
+}
+/*case16*/
+.Car--niva.case_16 {
+    background: #111;
+}
+.Car--niva.case_16 .Car-name {
+    color: #fff;
+}
+.Car--niva.case_16 .case_logo {
+    width: 150px;
+    opacity: 0.5;
+}
+.Car--niva.case_16 .Car-moto {
+    color: #ccc;
+}
+.Car.Car--niva.case_16 .Car-link:hover {
+    transition: 0.3s !important;
+    color: #fff !important;
+}
+.Car.Car--niva.case_16 .Car-link:hover img {
+    filter: contrast(0);
+    transition: 0.3s;
+}
+.Car--niva.case_16 .Car-image {
+    background: transparent url(/03_work/case_16/image/list_pic.png) 0 0 no-repeat;
+    height: 300px;
+    width: 336px;
+    background-size: contain;
+    right: 30px;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%) !important;
+}
+.Car--niva.case_16 .Car-decor::before {
+    width: 60px;
+    height: 100%;
+    display: block;
+    content: '';
+    background: url(/03_work/case_16/image/web_bg.jpeg);
+    opacity: 0.1;
+}
+/*case17*/
+.Car--niva.case_17 .case_logo {
+    width: 150px;
+    margin-left: 7px;
+}
+.Car--niva.case_17 .Car-decor::before {
+    width: 100%;
+    display: block;
+    background: url(/03_work/case_17/image/dynamic-style.png);
+    transform: skewX(0deg);
+    opacity:0.3;
+}
+.Car--niva.case_17 .Car-decor.one {
+    right: 0;
+    width: 50%;
+}
+.Car--niva.case_17 .Car-image {
+    background: transparent url(/03_work/case_16/image/list_pic.png) 0 0 no-repeat;
+    height: 300px;
+    width: 336px;
+    background-size: contain;
+    right: 30px;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%) !important;
+}
+/*case18*/
+.Car--niva.case_18 .Car-decor::before {
+    width: 100%;
+    display: block;
+    background: url(/03_work/case_18/image/bg_pic.jpg)no-repeat;
+    transform: skewX(0deg);
+    background-position: 2% bottom;
+    background-size: cover;
+}
+.Car--niva.case_18 .Car-decor.one {
+    right: 0;
+    width: 60%;
+    clip-path: polygon(48% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.Car--niva.case_18 .Car-image {
+    background: transparent url(/03_work/case_18/image/turn\ on1.png) 0 0 no-repeat;
+    height: 200px;
+    width: 177px;
+    background-size: contain;
+    right: 200px;
+    margin: 0;
+    top: 0;
+    transform: scaleX(-1) !important;
+}
+/*case19*/
+.Car--niva.case_19 .Car-image {
+    background: transparent url(/03_work/case_19/image/圖層\ 2.png) 0 0 no-repeat;
+    height: 467px;
+    width: 450px;
+    background-size: contain;
+    right: 50px;
+    margin: 0;
+    bottom: 0;
+    top: initial;
+}
+.Car--niva.case_19 .Car-decor::before {
+    width: 100%;
+    display: block;
+    background:none;
+    background-color: #e4d9cf;
+    transform: skewX(0deg);
+}
+.Car--niva.case_19 .Car-decor.one {
+    right: 0;
+    width: 45%;
+    clip-path: polygon(48% 0, 100% 0, 100% 100%, 0% 100%);
+}
+.Car--niva.case_19 .case_logo {
+    width: 150px;
+}
+
+/*case20*/
+.Car.Car--niva.case_20 {
+    background: #222;
+}
+.Car--niva.case_20 h1.Car-name {
+    color: #fff;
+}
+.Car--niva.case_20 .Car-moto {
+    color: #ccc;
+}
+.Car.Car--niva.case_20 .Car-link:hover {
+    transition: 0.3s !important;
+    color: #fff !important;
+}
+.Car.Car--niva.case_20 .Car-link:hover img {
+    filter: contrast(0);
+    transition: 0.3s;
+}
+.Car--niva.case_20 .Car-image {
+    background: transparent url(/03_work/case_20/image/list_drgan.png) 0 0 no-repeat;
+    height: 354px;
+    width: 480px;
+    background-size: contain;
+    right: 115px;
+    margin: 0;
+    bottom: 0px;
+    top: initial;
+}
+.Car--niva.case_20 .Car-decor::before {
+    width: 100%;
+    display: block;
+    transform: skewX(0deg);
+    background: #000 url(/03_work/case_20/image/190513_banner_padh.jpg)no-repeat;
+    background-size: cover;
+    background-position: 30% top;
+    filter: blur(2px);
+}
+.Car--niva.case_20 .Car-decor::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.7;
+}
+.Car--niva.case_20 .Car-decor.one {
+    right: 0;
+    width: 60%;
+    clip-path: polygon(59% 0, 100% 0, 100% 100%, 0% 100%);
+}
+/*case21*/
+.Car--niva.case_21 {
+    background: #222;
+}
+.Car--niva.case_21 h1.Car-name {
+    color: #fff;
+}
+.Car--niva.case_21 .Car-moto {
+    color: #ccc;
+}
+.Car.Car--niva.case_21 .Car-link:hover {
+    transition: 0.3s !important;
+    color: #fff !important;
+}
+.Car.Car--niva.case_21 .Car-link:hover img {
+    filter: contrast(0);
+    transition: 0.3s;
+}
+.Car--niva.case_21 .case_logo {
+    width: 120px;
+}
+.Car--niva.case_21 .Car-decor::before {
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    background: #151515;
+    transform: skewX(0deg);
+    border-radius: 50%;
+}
+.Car--niva.case_21 .Car-decor.one {
+    right: -150px;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    bottom: -100px;
+    top: initial;
+}
+.Car--niva.case_21 .Car-image {
+    background: transparent url(/03_work/case_21/image/210311_women3.png) 0 0 no-repeat;
+    height: 527px;
+    width: 479px;
+    background-size: contain;
+    right: 50px;
+    margin: 0;
+    bottom: -80px;
+    top: initial;
+}
+/*case22*/
+.Car--niva.case_22 .case_logo {
+    width: 120px;
+}
+.Car--niva.case_22 {
+    background: #f0f0f0;
+    z-index:-1;
+}
+.Car--niva.case_22 .Car-image {
+    background: transparent url(/03_work/case_22/image/0708_backpic.jpg) 0 0 no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    right: 0px;
+    margin: 0;
+    top: 0px;
+    z-index: -1;
+    background-position: 61% bottom;
+}
+.Car--niva.case_22 .Car-decor::before {
+    background: transparent;
+    transform: skewX(0deg);
+    pointer-events: none;
+}
+/*case23*/
+.Car--niva.case_23 .Car-image {
+    background: transparent url(/03_work/case_23/image/deco_men.png) 0 0 no-repeat;
+    height: 329px;
+    width: 500px;
+    background-size: contain;
+    right: -42px;
+    margin: 0;
+    top: initial;
+    background-position: 61% bottom;
+    bottom: 0;
+}
+.Car--niva.case_23 .Car-decor::before {
+    width: 100%;
+    display: block;
+    transform: skewX(0deg);
+    background: url(/03_work/case_23/image/0708_bg.jpg)no-repeat;
+    background-size: cover;
+    background-position: right top;
+}
+.Car--niva.case_23 .Car-decor.one {
+    right: 0px;
+    width: 50%;
+}
+
+/*case24*/
+.Car--niva.case_24 .case_logo {
+    width: 50px;
+}
+.Car--niva.case_24 .Car-image {
+    background: transparent url(/03_work/case_24/image/deco_pic2.png) 0 0 no-repeat;
+    height: 100%;
+    width: 75%;
+    background-size: contain;
+    right: -162px;
+    margin: 0;
+    top: 0px;
+}
+.Car--niva.case_24 .Car-decor::before {
+    width: 100%;
+    display: block;
+    transform: skewX(0deg);
+    background:none;
+}
+/*case25*/
+.Car--niva.case_25 .Car-image {
+    background: transparent url(/03_work/case_25/image/pic_00001.png) 0 0 no-repeat;
+    height: 100%;
+    width: 60%;
+    background-size: contain;
+    right: 0;
+    margin: 0;
+    top: 33px;
+    background-position: right;
+}
+.Car--niva.case_25 .Car-decor::before {
+    background: #f8b407;
+}
+.Car--niva.case_25 .case_logo {
+    width: 120px;
+}
+/*case26*/
+.Car--niva.case_26 .Car-image {
+    background: transparent url(/03_work/case_26/image/pic_01.jpeg) 0 0 no-repeat;
+    height: 100%;
+    width: 60%;
+    background-size: cover;
+    right: 0;
+    margin: 0;
+    bottom: 0px;
+    top: 0;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    background-position: 78%;
+}

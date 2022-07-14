@@ -1,0 +1,37 @@
+/*色碼*/
+.color-item.first {
+    overflow: hidden;
+}
+.color-item.third {
+    overflow: hidden;
+}
+.color-item.third img {
+    width: 200%;
+}
+
+/*slogan banner*/
+.wine_img img {
+    width: 100%;
+}
+.wine_img {
+    width: 300px;
+    position: absolute;
+    right: 120px;
+    bottom: 327px;
+    opacity: 0;
+    animation-name: flyRight;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flyRight{
+    0%{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    }

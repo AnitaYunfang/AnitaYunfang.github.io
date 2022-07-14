@@ -1,0 +1,109 @@
+.header-menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #ebebeb;
+    height: 100px;
+    z-index: 111;
+}
+.header-menu .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 10%;
+    height:100%;
+}
+.header-menu .logo a{
+    font-family: 'Dosis', sans-serif;
+    display: block;
+    font-size:40px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    color: #111;
+    line-height: 1em;
+}
+.menu-list ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+    line-height: 1.5em;
+}
+.menu-list ul:hover li a{
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.menu-list ul:hover li a:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+.menu-list ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+.menu-list ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+.menu-list input {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    right: 10%;
+    transform: translateY(-50%);
+    z-index:11;
+}
+.hambar {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10%;
+    transform: translateY(-50%);
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index:1;
+}
+span.ham_line {
+    width: 30px;
+    height: 2px;
+    background-color: #666;
+    position: relative;
+    border-radius: 5px;
+    display:block;
+    z-index:1;
+    transition: 0.2s;
+}
+.menu-list input:checked ~ .hambar span.first {
+    transform: rotate(45deg) translate(50%, 0px);
+    transition: 0.2s;
+    right:11px;
+}
+.menu-list input:checked ~ .hambar span.second
+{
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.menu-list input:checked ~ .hambar span.third
+{
+  transform: rotate(-45deg) translate(50%, 0px);
+  transition: 0.2s;
+  right:11px;
+}
