@@ -14,7 +14,7 @@
     width: 100%;
 }
 .wine_img {
-    width: 300px;
+    width: 250px;
     position: absolute;
     right: 120px;
     bottom: 327px;
@@ -24,7 +24,10 @@
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
+.work.case_11 .main-title h1 {
 
+    letter-spacing: 0px;
+}
 @keyframes flyRight{
     0%{
         transform: translateX(30px);
