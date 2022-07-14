@@ -1,9 +1,9 @@
 /*banne_slogan*/
 .slogan_pic {
-    width: 60px;
+    width: 49px;
     position: absolute;
-    right: 246px;
-    top: 175px;
+    right: 218px;
+    top: 163px;
     opacity: 0;
     animation-name: flyUp;
     animation-duration: 3s;

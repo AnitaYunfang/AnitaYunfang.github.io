@@ -3,13 +3,13 @@ html{
 }
 .main {
     background-color: #ebebeb;
-    width: 100%;
+    width: calc(100% - 20%);
     height: auto;
     min-height: calc(100vh - 148px);
-    padding: 0% 10%;
+    padding: 0%;
     position: relative;
-    max-width: 2200px;
-    margin: 100px auto 0 auto;
+    max-width: 1536px;
+    margin: 100px 10% 0 10%;
 }
 .sub_menu{
     background-color: #ebebeb;
@@ -91,7 +91,7 @@ html{
     padding-right: 100px;
     padding-top:40px;
     position:relative;
-    margin-top: 120px;
+    margin-top: 108px;
 }
 .left_name:after {
     content: "";
@@ -198,7 +198,7 @@ html{
 }
 /*介紹內文*/
 .content_block {
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 1px;
     line-height: 1.5em;
     color:#444;
