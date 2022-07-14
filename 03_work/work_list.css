@@ -56,14 +56,10 @@
 /*列表切換出現動態*/
 .work_list .main.second.active {
     display: flex;
-    transition: 0.3s;
-    animation-name: list_fly;
-    animation-delay: 0.5s;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    opacity: 0;
+    transition: 0.1s;
+    background: #f1f1f1;
 }
+
 .work_list .main.first {
     display: none;
     transition: 0.3s;
@@ -129,6 +125,13 @@
 .open_list {
     width: calc(100%/3 - 40px);
     margin: 0 20px 80px 20px;
+    transition: 0.3s;
+    animation-name: list_fly;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity:0;
 }
 .open_list .list_item a .list_title {
     font-size: 19px;
@@ -181,6 +184,9 @@
 }
 .switch_button .button_item:hover {
     cursor: pointer;
+}
+.work.work_list .header-menu.active .menu-list ul li a.change-color {
+    color: #333;
 }
 /*Swiper原样式 */
 .swiper-button-next{
