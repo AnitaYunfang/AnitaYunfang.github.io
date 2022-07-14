@@ -379,9 +379,9 @@
 }
 .Car--niva.case_4 .Car-image.first {
     background: transparent url(/03_work/case_4/image/about_pic-1.jpeg) 0 0 no-repeat;
-    height: 284px;
-    width: 241px;
-    background-size: contain;
+    height: 256px;
+    width: 239px;
+    background-size: cover;
     right: 191px;
     margin: 0;
     bottom: 50px;
@@ -389,10 +389,10 @@
 }
 .Car--niva.case_4 .Car-image.second {
     background: transparent url(/03_work/case_4/image/about_pic-2.jpeg) 0 0 no-repeat;
-    height: 223px;
-    width: 150px;
-    background-size: contain;
-    right: 30px;
+    height: 195px;
+    width: 148px;
+    background-size: cover;
+    right: 31px;
     margin: 0;
     top:37px;
 }
