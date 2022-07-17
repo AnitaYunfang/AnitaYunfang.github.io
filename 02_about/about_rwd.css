@@ -79,5 +79,18 @@
         font-weight: 300;
         font-size: 30px;
     }
+    .about .menu-list input ~ ul.header_nav {
+        transform: translateX(100%);
+        transition: 1s;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+    }
+    .about .menu-list input:checked ~ ul.header_nav {
+        transform: none;
+        transition: 0.8s;
+        box-shadow: 1px 0px 1px 1px #999;
+    }
 }
 
