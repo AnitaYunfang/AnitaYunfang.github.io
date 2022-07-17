@@ -5,6 +5,14 @@
     margin: 150px auto 0 auto;
     padding-bottom: 100px;
 }
+.about .header-menu.is-scroll {
+    border-bottom: 1px solid #ccc;
+    transition: 0.3s;
+}
+.about .header-menu {
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
 
 /*sub_menu*/
 .sub_menu{
@@ -128,11 +136,11 @@
     border-bottom: 1px solid #ccc;
 }
 .skill_block .myskill {
-    width: 40%;
-    padding-right: 150px;
+    width: 30%;
 }
 .skill_block .mywork {
-    width: 60%;
+    width: calc(70% - 100px);
+    margin-left: 100px;
 }
 .skill_list .item_name {
     color: #333;
@@ -147,7 +155,7 @@
 .skill_title {
     color: #666;
     line-height: 1.5em;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 15px;

@@ -107,3 +107,9 @@ span.ham_line {
   transition: 0.2s;
   right:11px;
 }
+
+/*other目前無法點擊*/
+.menu-list ul li.nav_item:nth-child(3) a {
+    pointer-events: none;
+    opacity: 0.3;
+}

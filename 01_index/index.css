@@ -103,3 +103,9 @@
     text-align: right;
 }
 
+
+/*other暫時無法點擊*/
+.web_menu ul li:nth-child(3) a {
+    pointer-events: none;
+    opacity: 0.3;
+}

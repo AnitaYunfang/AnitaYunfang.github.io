@@ -6,7 +6,9 @@
 
 /*1700px*/
 @media (max-width: 1700px) {
-
+    .resume_block .intor_block .left_pic {
+        padding: 0px;
+    }
 }
 
 
@@ -14,6 +16,9 @@
 @media (max-width: 1600px) {
     .about .main {
         width: 80%;
+    }
+    .resume_block .intor_block .right_name .myname .tw_name {
+        font-size: 130px;
     }
 }
 
@@ -33,12 +38,21 @@
     .resume_block .intor_block .left_pic {
         padding: 30px 30px 0px 0px;
     }
+    .skill_block .mywork {
+        width: calc(70% - 50px);
+        margin-left: 50px;
+    }
+    .skill_block .myskill {
+        padding-right: 30px;
+    }
 }
 
 
 /*1400px*/
 @media (max-width: 1400px) {
-
+    .resume_block .intor_block .right_name .myname .tw_name {
+        letter-spacing: 60px;
+    }
 }
 
 /*1300px*/
@@ -94,3 +108,15 @@
     }
 }
 
+/*1100px*/
+@media (max-width:1100px) {
+    .resume_block .intor_block .right_name .myname .tw_name {
+        letter-spacing: 40px;
+    }
+    .resume_block .intor_block .left_pic {
+        padding: 0;
+    }
+    .skill_block .myskill {
+        padding-right: 0;
+    }
+}
