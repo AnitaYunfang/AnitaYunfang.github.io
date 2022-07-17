@@ -1,0 +1,10 @@
+/*1500px*/
+@media (max-width: 1500px) {
+    .resume_block .intor_block .right_name {
+        width: calc(70% - 50px);
+        margin-left: 50px;
+    }
+    .resume_block .intor_block .right_name .myname .tw_name {
+        font-size: 100px;
+    }
+}
