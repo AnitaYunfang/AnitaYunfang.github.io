@@ -221,3 +221,9 @@ ul.list_item li span.year {
     font-weight: 300;
     letter-spacing: 0px;
 }
+
+
+/*gobackbtn*/
+.about .back_btn {
+    display: none;
+}

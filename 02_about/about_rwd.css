@@ -1,3 +1,23 @@
+/*1800px*/
+@media (max-width: 1800px) {
+
+}
+
+
+/*1700px*/
+@media (max-width: 1700px) {
+
+}
+
+
+/*1600px*/
+@media (max-width: 1600px) {
+    .about .main {
+        width: 80%;
+    }
+}
+
+
 /*1500px*/
 @media (max-width: 1500px) {
     .resume_block .intor_block .right_name {
@@ -7,4 +27,57 @@
     .resume_block .intor_block .right_name .myname .tw_name {
         font-size: 100px;
     }
+    .resume_block .intor_block .right_name .myname .en_name {
+        font-size: 40px;
+    }
+    .resume_block .intor_block .left_pic {
+        padding: 30px 30px 0px 0px;
+    }
 }
+
+
+/*1400px*/
+@media (max-width: 1400px) {
+
+}
+
+/*1300px*/
+@media (max-width: 1300px) {
+
+}
+
+/*1200px*/
+@media (max-width: 1200px) {
+
+}
+
+
+
+/*1199px*/
+@media (max-width: 1199px) {
+    .about input[type="checkbox"] {
+        display: block;
+    }
+    .about .hambar {
+        display: flex;
+    }
+    .about .menu-list ul.header_nav {
+        flex-direction: column;
+        min-width: 350px;
+        width: 25%;
+        max-width: 540px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 0;
+        align-items: flex-start;
+        padding: 200px 50px 0 50px;
+        background: #f1f1f1;
+    }
+    .about .menu-list ul li a {
+        font-weight: 300;
+        font-size: 30px;
+    }
+}
+
