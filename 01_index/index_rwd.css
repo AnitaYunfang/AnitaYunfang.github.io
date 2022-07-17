@@ -1,0 +1,10 @@
+/*1800px*/
+
+
+
+/*1500px*/
+@media (max-width: 1500px) {
+.cover_banner .main .right_word .main-title {
+    font-size: 80px;
+}
+}
