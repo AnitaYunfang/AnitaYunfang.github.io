@@ -1,6 +1,9 @@
 html{
     background-color: #ebebeb;
 }
+.work .Car.Car--niva:hover {
+    cursor: auto;
+}
 .main {
     background-color: #ebebeb;
     width: calc(100% - 20%);
