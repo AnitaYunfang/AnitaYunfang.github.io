@@ -1,0 +1,6 @@
+/*1500px*/
+@media (max-width: 1500px) {
+.main {
+    margin: 100px 4% 0 6%;
+}
+}

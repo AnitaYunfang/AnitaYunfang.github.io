@@ -22,3 +22,13 @@
     }
 }
 
+
+/*1800px*/
+@media (max-width:1800px) {
+    .slogan_pic {
+        width: 34%;
+        left: 130px;
+        top: 33px;
+    }
+
+}
