@@ -228,7 +228,15 @@ ul.list_item li span.year {
     font-weight: 300;
     letter-spacing: 0px;
 }
+ul.list_item .work ul.sub_list li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
 
+ul.list_item .work ul.sub_list {
+    padding-left: 145px;
+    margin-top: 10px;
+}
 
 /*gobackbtn*/
 .about .back_btn {
