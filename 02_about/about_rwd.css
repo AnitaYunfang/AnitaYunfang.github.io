@@ -126,3 +126,10 @@
         padding-right: 0;
     }
 }
+
+/*1000px*/
+@media (max-width:1000px) {
+    .resume_block .intor_block .right_name .myname .tw_name {
+        font-size: 90px;
+    }
+}

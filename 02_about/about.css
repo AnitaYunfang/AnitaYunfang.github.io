@@ -170,7 +170,7 @@
 .skill_list .item_how {
     width: calc(100% - 120px);
     height: 8px;
-    background: #eee;
+    background: #d4d4d4;
     position: relative;
 }
 .skill_list .item_how:after {
