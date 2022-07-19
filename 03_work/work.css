@@ -13,6 +13,7 @@ html{
     position: relative;
     max-width: 1536px;
     margin: 100px 10% 0 10%;
+    overflow-x: hidden;
 }
 .sub_menu{
     background-color: #ebebeb;
