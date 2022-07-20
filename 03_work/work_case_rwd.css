@@ -56,3 +56,35 @@
         margin: 100px 5% 0 5%;
     }
 }
+
+/*700px*/
+@media (max-width:700px) {
+    .right_pic {
+        width: 100%;
+    }    
+}
+
+/*600px*/
+@media (max-width:600px) {
+    .main-title {
+        text-align: center;
+    }
+    .color-block {
+        justify-content: center;
+    }
+    .link_block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }  
+    .case_catalogy {
+        margin-top: 0px;
+        margin-right: 50px;
+    }
+    .link-btn {
+        margin-top: 0px;
+    }
+}
