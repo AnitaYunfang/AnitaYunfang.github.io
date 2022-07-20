@@ -1,7 +1,39 @@
-/*1500px*/
-@media (max-width: 1500px) {
+/*1600px*/
+@media (max-width: 1600px) {
     .main {
         margin: 100px 4% 0 6%;
         width: calc(100% - 10%);
+    }
+    .header-menu .container {
+        padding: 20px 5%;
+    }
+    .menu-list input {
+        right: 5%;
+    }
+    .hambar {
+        right: 5%;
+    }
+}
+
+/*1500px*/
+@media (max-width: 1500px) {
+    .left_name {
+        margin-top: 80px;
+    }
+}
+
+/*1300px*/
+@media (max-width:1300px) {
+    .left_name {
+        margin-top: 0;
+    }
+    .left_name:after{
+        display:none
+    }
+    .left_name:before{
+        display: none;
+    }
+    .brands_block .left_name {
+        padding-right: 0;
     }
 }

@@ -20,3 +20,41 @@
         opacity: 1;
     }
 }
+
+
+/*1800px*/
+@media (max-width: 1800px) {
+    .slogan_pic {
+        width: 39px;
+        right: 210px;
+    }
+}
+
+
+/*1500px*/
+@media (max-width: 1500px) {
+    .slogan_pic {
+        width: 32px;
+        right: 197px;
+    }
+    .slogan_pic {
+        right: 190px;
+    }
+}
+
+/*1400px*/
+@media (max-width: 1400px) {
+    .slogan_pic {
+        right: 185px;
+        top: 148px;
+    }
+}
+
+/*1300px*/
+@media (max-width: 1300px) {
+    .slogan_pic {
+        right: 170px;
+        top: 150px;
+        width: 28px;
+    }
+}
