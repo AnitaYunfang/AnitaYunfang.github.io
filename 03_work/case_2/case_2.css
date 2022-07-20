@@ -39,3 +39,10 @@
         width: 31%;
     } 
 }
+
+/*500px*/
+@media (max-width:500px) {
+    .slogan_pic {
+        left: 17%;
+    }
+}

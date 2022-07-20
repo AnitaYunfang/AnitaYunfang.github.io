@@ -88,3 +88,15 @@
         margin-top: 0px;
     }
 }
+
+/*400px*/
+@media (max-width:400px) {
+    .link_block {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .case_catalogy {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

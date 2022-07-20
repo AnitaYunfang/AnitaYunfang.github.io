@@ -201,3 +201,14 @@
 }
 
 }
+
+@media (max-width:500px){
+    .work .menu-list ul {
+        width: 100%;
+    }
+    .menu-list ul li {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
