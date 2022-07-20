@@ -37,3 +37,22 @@
         padding-right: 0;
     }
 }
+
+
+/*1000px*/
+@media (max-width:1000px) {
+    .brands_block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .brands_block .left_name {
+        width: 80%;
+    }
+    .right_pic {
+        width: 87%;
+    }
+    .main {
+        margin: 100px 5% 0 5%;
+    }
+}

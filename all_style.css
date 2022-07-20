@@ -216,3 +216,6 @@ abbr[title] {
 .top_btn, .back_btn {
   width: 50px;
 }
+.back_btn {
+  display: none;
+}

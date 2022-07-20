@@ -20,6 +20,9 @@
     .resume_block .intor_block .right_name .myname .tw_name {
         font-size: 130px;
     }
+    .header-menu .container{
+        padding:20px 5%;
+    }
 }
 
 
@@ -80,8 +83,8 @@
     }
     .about .menu-list ul.header_nav {
         flex-direction: column;
-        min-width: 350px;
-        width: 25%;
+        min-width: 300px;
+        width: 20%;
         max-width: 540px;
         height: 100vh;
         position: absolute;
