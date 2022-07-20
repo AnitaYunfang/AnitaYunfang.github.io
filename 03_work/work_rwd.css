@@ -175,6 +175,10 @@
     background: #ebebeb;
     margin-top: 0;
 }
+.main.second {
+    width: 100%;
+    margin: 0;
+}
 }
 
 

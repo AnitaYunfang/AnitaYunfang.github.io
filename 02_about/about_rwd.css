@@ -180,6 +180,19 @@
     }
     ul.list_item li {
         font-size: 17px;
+    }   
+}
+
+/*600px*/
+@media (max-width:600px){
+    .myinfo ul li {
+        font-size: 15px;
     }
-        
+    .resume_block .intor_block .right_name .myname {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .about .main {
+        width: 85%;
+    }
 }

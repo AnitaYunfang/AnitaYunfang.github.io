@@ -55,6 +55,14 @@
     .main {
         margin: 100px 5% 0 5%;
     }
+    .main-text {
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+    }
+    .link_block {
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+    }
 }
 
 /*700px*/
