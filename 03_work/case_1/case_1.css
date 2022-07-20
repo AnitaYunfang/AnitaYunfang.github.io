@@ -250,3 +250,31 @@ img.old_web:hover{
     line-height: 1.8em;
 }
 
+/*1800px*/
+@media(max-width:1800px){
+    .banner_slogan h3 {
+        font-size: 30px;
+    }
+    .banner_slogan {
+        left: 12%;
+        top: 27%;
+    }
+    .banner_slogan h6 {
+        font-size: 16px;
+    }
+}
+
+/*1600px*/
+@media(max-width:1600px){
+    .banner_slogan {
+        top: 31%;
+    }
+}
+
+/*1200px*/
+@media(max-width:1200px){
+    .banner_slogan {
+        transform: scale(0.8);
+        left: 9%;
+    }
+}
