@@ -136,3 +136,50 @@
         font-size: 90px;
     }
 }
+
+/*800px*/
+@media (max-width:800px){
+    ul.list_item li {
+        display: flex;
+        flex-direction: column;
+    }
+    ul.list_item .work ul.sub_list {
+        padding-left: 0px;
+    }
+    ul.list_item li span.work {
+        margin-top: 10px;
+    }
+    ul.list_item li span.school {
+        margin-top: 10px;
+    }
+    .resume_block .intor_block .left_pic {
+        width: 40%;
+    }
+    .resume_block .intor_block .right_name {
+        width: calc(60% - 50px);
+    }
+    .resume_block .intor_block .right_name .myname .tw_name {
+        font-size: 76px;
+        letter-spacing: 20px;
+    }
+    .resume_block .intor_block .right_name .myname .en_name {
+        font-size: 30px;
+    }
+    .skill_block .mywork {
+        width: calc(60% - 50px);
+    }
+    .skill_block .myskill {
+        width: 40%;
+    }       
+}
+
+/*700px*/
+@media(max-width:700px){
+    .resume_block .intor_block .right_name .myname .tw_name {
+        font-size: 60px;
+    }
+    ul.list_item li {
+        font-size: 17px;
+    }
+        
+}
