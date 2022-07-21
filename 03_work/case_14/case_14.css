@@ -14,3 +14,18 @@
 .slogan_pic img {
     width: 100%;
 }
+
+
+
+/*1800px*/
+@media(max-width:1800px){
+    .main_website .slogan_pic {
+        display: none;
+    }
+    .main_website .banner_main {
+        display: none;
+    }
+    .main_website .banner_main.rwd_show {
+        display: block !important;
+    }
+}

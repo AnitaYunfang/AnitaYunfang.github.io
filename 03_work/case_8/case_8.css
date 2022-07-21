@@ -94,3 +94,26 @@
         transform: translateY(0px);
     }
 }
+
+
+/*1800px*/
+@media(max-width:1800px){
+    .main_website .main_slogan {
+        display: none;
+    }
+    .main_website .banner_main {
+        display: none;
+    }
+    .main_website .banner_main.rwd_show {
+        display: block !important;
+    }
+    .main_website .sub_slogan {
+        display: none;
+    }
+    .case_8 .main_website .service_1 {
+        display: none;
+    }
+    .case_8 .main_website .service_2{
+        display: none;
+    }
+}

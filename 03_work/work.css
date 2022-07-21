@@ -287,3 +287,13 @@ html{
 .work.work_list body {
     height: auto;
 }
+
+
+/*主圖版本*/
+.banner_main.rwd_show img {
+    width: 100%;
+}
+
+.banner_main.rwd_show {
+    display: none;
+}

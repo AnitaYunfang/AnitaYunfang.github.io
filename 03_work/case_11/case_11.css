@@ -37,4 +37,18 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+/*1800px*/
+@media(max-width:1800px){
+    .main_website .wine_img {
+        display: none;
     }
+    .main_website .banner_main {
+        display: none;
+    }
+    .main_website .banner_main.rwd_show {
+        display: block !important;
+    }
+}
+
