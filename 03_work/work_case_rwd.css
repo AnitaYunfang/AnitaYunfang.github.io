@@ -95,6 +95,9 @@
     .link-btn {
         margin-top: 0px;
     }
+    .content_block {
+        text-align: center;
+    }
 }
 
 /*500px*/
@@ -114,5 +117,12 @@
     .case_catalogy {
         margin-right: 0;
         margin-bottom: 20px;
+    }
+}
+
+/*370px*/
+@media(max-width:370px){
+    .main-title h1 {
+        font-size: 35px;
     }
 }

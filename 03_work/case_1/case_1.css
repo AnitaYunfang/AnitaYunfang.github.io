@@ -288,3 +288,11 @@ img.old_web:hover{
     }    
 }
 
+/*400px*/
+@media(max-width:400px){
+    .banner_slogan {
+        transform: scale(0.4);
+        left: -42px;
+        top: 23%;
+    }
+}
