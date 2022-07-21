@@ -36,3 +36,11 @@ span.title-line {
     opacity: 1;
 }
 }
+
+/*1900px*/
+@media(max-width:1900px){
+    .banner_slogan {
+        right: 12%;
+        top: 41%;
+    }
+}

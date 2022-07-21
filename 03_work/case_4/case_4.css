@@ -35,3 +35,50 @@
     opacity: 1;
 }
 }
+
+
+/*1700px*/
+@media(max-width:1700px){
+    .slogan_banner {
+        bottom: 35%;
+        right: 10%;
+        opacity: 1;
+        animation-name: none;
+        transform: scale(0.8) !important;
+    }
+}
+
+/*1100px*/
+@media(max-width:1100px){
+    .slogan_banner {
+        bottom: 33%;
+        right: 5%;
+        transform: scale(0.6) !important;
+    }
+}
+
+/*500px*/
+@media(max-width:500px){
+    .slogan_banner {
+        bottom: 29%;
+        right: -5%;
+        transform: scale(0.4) !important;
+    }
+}
+
+/*400px*/
+@media(max-width:400px){
+    .slogan_banner {
+        bottom: 26%;
+        right: -15%;
+        transform: scale(0.3) !important;
+    }
+}
+
+/*320px*/
+@media(max-width:320px){
+    .slogan_banner {
+        bottom: 26%;
+        right: -21%;
+    }
+}

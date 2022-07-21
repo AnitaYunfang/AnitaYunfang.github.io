@@ -9,13 +9,20 @@
 
 @media (max-width: 1700px) {
 /*1700px*/
-.switch_button {
-    right: 14.5%;
+    .switch_button {
+        right: 14.5%;
+    }
+    .case_catalogy {
+        margin-top: 80px;
+    }
+    .brands_block .left_name {
+        padding-right: 60px;
+    }
+    .content_block {
+        font-size: 14px;
+    }
 }
-.case_catalogy {
-    margin-top: 80px;
-}
-}
+
 
 
 @media (max-width: 1600px) {

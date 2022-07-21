@@ -2,9 +2,20 @@
 @media(max-width:1900px){
     .main-title h1 {
         font-size: 50px;
+        margin-bottom:10px;
     }
     .main-title h4 {
         font-size: 25px;
+    }
+}
+
+/*1700px*/
+@media(max-width:1700px){
+    .main-title h1 {
+        font-size: 45px;
+    }
+    .main-title h4 {
+        font-size: 20px;
     }
 }
 
@@ -45,6 +56,13 @@
     }
     .brands_block .left_name {
         padding-right: 0;
+    }
+}
+
+/*1200px*/
+@media(max-width:1200px){
+    .main-title h1 {
+        font-size: 40px;
     }
 }
 
