@@ -219,3 +219,17 @@ abbr[title] {
 .back_btn {
   display: none;
 }
+
+/*1199px*/
+@media (max-width:1199px){
+  .fix-scroll {
+    right: 10px;
+}
+}
+
+/*991px*/
+@media (max-width:991px){
+  .fix-scroll {
+    right: 3px;
+}
+}

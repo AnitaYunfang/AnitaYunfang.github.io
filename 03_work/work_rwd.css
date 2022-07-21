@@ -108,9 +108,6 @@
     .open_list .list_item a .list_title {
         font-size: 19px;
     }
-    .fix-scroll {
-        right: 10px;
-    }
     .work .menu-list ul {
         min-width: 300px;
         width: 20%;
@@ -143,9 +140,6 @@
 }
 .Canvas {
     transform: scale(0.8);
-}
-.fix-scroll {
-    right: 3px;
 }
 }
 
