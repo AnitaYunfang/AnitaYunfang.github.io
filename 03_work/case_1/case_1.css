@@ -278,3 +278,13 @@ img.old_web:hover{
         left: 9%;
     }
 }
+
+/*600px*/
+@media(max-width:600px){
+    .banner_slogan {
+        transform: scale(0.5);
+        left: 0;
+        top: 29%;
+    }    
+}
+

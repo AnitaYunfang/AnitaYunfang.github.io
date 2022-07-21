@@ -97,6 +97,14 @@
     }
 }
 
+/*500px*/
+@media(max-width:500px){
+    .main-title h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+}
+
 /*400px*/
 @media (max-width:400px) {
     .link_block {
