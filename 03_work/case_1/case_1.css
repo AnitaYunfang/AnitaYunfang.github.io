@@ -285,7 +285,10 @@ img.old_web:hover{
         transform: scale(0.5);
         left: 0;
         top: 29%;
-    }    
+    }
+    .front_deco {
+        display: none;
+    }
 }
 
 /*400px*/

@@ -1,3 +1,13 @@
+/*1900px*/
+@media(max-width:1900px){
+    .main-title h1 {
+        font-size: 50px;
+    }
+    .main-title h4 {
+        font-size: 25px;
+    }
+}
+
 /*1600px*/
 @media (max-width: 1600px) {
     .main {
@@ -124,5 +134,8 @@
 @media(max-width:370px){
     .main-title h1 {
         font-size: 35px;
+    }
+    .brands_block .left_name {
+        width: 100%;
     }
 }
