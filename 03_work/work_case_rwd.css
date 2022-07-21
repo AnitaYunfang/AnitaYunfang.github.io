@@ -117,7 +117,7 @@
         margin-bottom: 20px;
     }  
     .case_catalogy {
-        margin-top: 0px;
+        margin-top: 0px !important;
         margin-right: 50px;
     }
     .link-btn {
