@@ -1,7 +1,7 @@
 /*1900px*/
 @media(max-width:1900px){
     .main-title h1 {
-        font-size: 50px;
+        font-size: 50px !important;
         margin-bottom:10px;
     }
     .main-title h4 {
@@ -12,7 +12,7 @@
 /*1700px*/
 @media(max-width:1700px){
     .main-title h1 {
-        font-size: 45px;
+        font-size: 45px !important;
     }
     .main-title h4 {
         font-size: 20px;
@@ -62,7 +62,7 @@
 /*1200px*/
 @media(max-width:1200px){
     .main-title h1 {
-        font-size: 40px;
+        font-size: 40px !important;
     }
 }
 
@@ -126,12 +126,14 @@
     .content_block {
         text-align: center;
     }
+    .content_block br {
+        display: none;
+    }
 }
 
 /*500px*/
 @media(max-width:500px){
     .main-title h1 {
-        font-size: 40px;
         margin-bottom: 10px;
     }
 }
@@ -151,7 +153,7 @@
 /*370px*/
 @media(max-width:370px){
     .main-title h1 {
-        font-size: 35px;
+        font-size: 35px !important;
     }
     .brands_block .left_name {
         width: 100%;
