@@ -207,6 +207,7 @@
 
 }
 
+/*500px*/
 @media (max-width:500px){
     .work .menu-list ul {
         width: 100%;
@@ -215,5 +216,12 @@
         width: 100%;
         text-align: center;
         margin: 0;
+    }
+}
+
+/*400px*/
+@media (max-width:400px){
+    .open_list {
+        width: calc(100%/1 - 20px);
     }
 }

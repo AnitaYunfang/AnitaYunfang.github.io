@@ -202,7 +202,9 @@
     ul.list_item li span.work {
         font-size: 15px;
     }
-
+    .about .main {
+        margin: 100px auto 0 auto;
+    }
 }
 
 /*500px*/
@@ -276,5 +278,12 @@
     .skill_block .mywork {
         margin-left: 0px;
         width: 100%;
+    }
+}
+
+/*350px*/
+@media (max-width:350px){
+    .resume_block .intor_block .left_pic {
+        width: 90%;
     }
 }
