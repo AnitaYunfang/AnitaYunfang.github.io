@@ -180,7 +180,11 @@
     }
     ul.list_item li {
         font-size: 17px;
-    }   
+    }
+    .myinfo ul li {
+        margin-bottom: 5px;
+        font-size: 17px;
+    }
 }
 
 /*600px*/
@@ -194,5 +198,83 @@
     }
     .about .main {
         width: 85%;
+    }
+    ul.list_item li span.work {
+        font-size: 15px;
+    }
+
+}
+
+/*500px*/
+@media (max-width:500px){
+    .resume_block .intor_block .right_name .myname .tw_name {
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+    .resume_block .intor_block .right_name .myname .en_name {
+        font-size: 20px;
+    }
+    .resume_block .intor_block .right_name {
+        width: calc(60% - 30px);
+        margin-left: 30px;
+    }
+    .skill_list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .skill_list .item_how {
+        margin-top: 9px;
+    }
+    .skill_list .item_name {
+        width: 100%;
+    }
+    .skill_list .item_how {
+        margin-top: 9px;
+        width: 100%;
+    }
+    .mywork h4 {
+        font-size: 22px;
+    }
+    .skill_title {
+        font-size: 22px;
+    }
+}
+
+/*450px*/
+@media (max-width:450px){
+    .myinfo ul li {
+        font-size: 14px;
+    }
+    .resume_block .intor_block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .resume_block .intor_block .left_pic {
+        width: 60%;
+    }   
+    .resume_block .intor_block .right_name {
+        margin-left: 0pc;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .skill_block {
+        margin-top: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .skill_list {
+        flex-direction: row;
+        width: 100%;
+    }
+    .skill_block .myskill {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .skill_block .mywork {
+        margin-left: 0px;
+        width: 100%;
     }
 }

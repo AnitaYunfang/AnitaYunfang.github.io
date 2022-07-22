@@ -113,3 +113,14 @@ span.ham_line {
     pointer-events: none;
     opacity: 0.3;
 }
+
+
+/*600px*/
+@media(max-width:600px){
+    .header-menu {
+        height: 80px;
+    }
+    .header-menu .logo a {
+        font-size: 30px;
+    }
+}
