@@ -1,0 +1,349 @@
+/* PCOS Progress Report Styles */
+.pcos-report {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 30px 80px;
+    color: #333;
+}
+
+/* Report Header */
+.pcos-report .report-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 35px 20px;
+    background: linear-gradient(135deg, #dceefb 0%, #e0f2e9 50%, #fef9e7 100%);
+    border-radius: 16px;
+}
+
+.pcos-report .report-header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2c5f7c;
+    margin-bottom: 8px;
+}
+
+.pcos-report .report-header .subtitle {
+    font-size: 14px;
+    color: #5a8a9a;
+    line-height: 1.8;
+}
+
+.pcos-report .report-header .date-tag {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 16px;
+    background: rgba(255,255,255,0.65);
+    border-radius: 20px;
+    font-size: 13px;
+    color: #5a8a9a;
+}
+
+/* Medical History */
+.pcos-report .history-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 4px solid #ef5350;
+}
+
+.pcos-report .history-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #c62828;
+    margin-bottom: 15px;
+}
+
+.pcos-report .history-timeline {
+    position: relative;
+    padding-left: 28px;
+}
+
+.pcos-report .history-timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    bottom: 5px;
+    width: 3px;
+    background: #ffcdd2;
+    border-radius: 2px;
+}
+
+.pcos-report .history-item {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.pcos-report .history-item:last-child {
+    margin-bottom: 0;
+}
+
+.pcos-report .history-item::before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    width: 11px;
+    height: 11px;
+    background: #ef5350;
+    border-radius: 50%;
+    border: 3px solid #ffcdd2;
+}
+
+.pcos-report .history-item .h-date {
+    font-size: 13px;
+    font-weight: 600;
+    color: #e53935;
+    margin-bottom: 2px;
+}
+
+.pcos-report .history-item .h-desc {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Section Card */
+.pcos-report .report-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 28px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.pcos-report .report-section h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #eee;
+}
+
+.pcos-report .report-section .section-desc {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+/* Color coded sections */
+.pcos-report .sec-smoking h2 { color: #c62828; border-color: #ffcdd2; }
+.pcos-report .sec-sleep h2 { color: #1565c0; border-color: #bbdefb; }
+.pcos-report .sec-exercise h2 { color: #2e7d32; border-color: #c8e6c9; }
+.pcos-report .sec-summary h2 { color: #6a1b9a; border-color: #e1bee7; }
+
+/* Tracking Table */
+.pcos-report .track-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+.pcos-report .track-table thead th {
+    padding: 10px 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    color: #fff;
+}
+
+.pcos-report .sec-smoking .track-table thead th { background: #ef5350; }
+.pcos-report .sec-sleep .track-table thead th { background: #42a5f5; }
+.pcos-report .sec-exercise .track-table thead th { background: #66bb6a; }
+
+.pcos-report .track-table thead th:first-child {
+    border-radius: 8px 0 0 0;
+}
+
+.pcos-report .track-table thead th:last-child {
+    border-radius: 0 8px 0 0;
+}
+
+.pcos-report .track-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.pcos-report .track-table td:first-child {
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+}
+
+.pcos-report .track-table tbody tr:hover td {
+    background: #fafafa;
+}
+
+.pcos-report .track-table .week-highlight td {
+    background: #fff8e1;
+}
+
+/* Status badges */
+.pcos-report .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.pcos-report .badge-good { background: #e8f5e9; color: #2e7d32; }
+.pcos-report .badge-ok { background: #fff8e1; color: #f57f17; }
+.pcos-report .badge-warn { background: #fce4ec; color: #c62828; }
+.pcos-report .badge-info { background: #e3f2fd; color: #1565c0; }
+
+/* Progress bar */
+.pcos-report .progress-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.pcos-report .progress-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    min-width: 90px;
+}
+
+.pcos-report .progress-bar-wrap {
+    flex: 1;
+    background: #eee;
+    border-radius: 8px;
+    height: 18px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pcos-report .progress-bar-fill {
+    height: 100%;
+    border-radius: 8px;
+    transition: width 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    min-width: 35px;
+}
+
+.pcos-report .bar-red { background: linear-gradient(90deg, #ef5350, #e53935); }
+.pcos-report .bar-blue { background: linear-gradient(90deg, #42a5f5, #1e88e5); }
+.pcos-report .bar-green { background: linear-gradient(90deg, #66bb6a, #43a047); }
+.pcos-report .bar-purple { background: linear-gradient(90deg, #ab47bc, #8e24aa); }
+
+/* Note box */
+.pcos-report .note-box {
+    background: #f3e5f5;
+    border-left: 4px solid #ab47bc;
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+    margin: 18px 0 8px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #4a148c;
+}
+
+.pcos-report .note-box.note-warn {
+    background: #fff3e0;
+    border-color: #ff9800;
+    color: #e65100;
+}
+
+.pcos-report .note-box.note-success {
+    background: #e8f5e9;
+    border-color: #4caf50;
+    color: #1b5e20;
+}
+
+/* Summary Grid */
+.pcos-report .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 15px 0;
+}
+
+.pcos-report .summary-item {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+}
+
+.pcos-report .summary-item .s-number {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.pcos-report .summary-item .s-unit {
+    font-size: 14px;
+    color: #999;
+}
+
+.pcos-report .summary-item .s-label {
+    font-size: 13px;
+    color: #666;
+    margin-top: 6px;
+}
+
+.pcos-report .s-red .s-number { color: #e53935; }
+.pcos-report .s-blue .s-number { color: #1e88e5; }
+.pcos-report .s-green .s-number { color: #43a047; }
+.pcos-report .s-purple .s-number { color: #8e24aa; }
+
+/* Disclaimer */
+.pcos-report .disclaimer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+    font-size: 13px;
+    color: #999;
+    border-top: 1px solid #eee;
+}
+
+/* Print */
+@media print {
+    .header-menu, .sub_menu, .fix-scroll { display: none; }
+    .pcos-report { padding: 20px; }
+    .pcos-report .report-section { box-shadow: none; border: 1px solid #ddd; }
+}
+
+/* RWD */
+@media (max-width: 768px) {
+    .pcos-report {
+        padding: 20px 16px 60px;
+    }
+    .pcos-report .report-header h1 {
+        font-size: 22px;
+    }
+    .pcos-report .report-section {
+        padding: 20px 16px;
+    }
+    .pcos-report .track-table {
+        font-size: 12px;
+    }
+    .pcos-report .track-table td,
+    .pcos-report .track-table th {
+        padding: 8px 6px;
+    }
+    .pcos-report .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pcos-report .summary-item .s-number {
+        font-size: 28px;
+    }
+}
