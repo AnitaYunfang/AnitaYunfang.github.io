@@ -1,0 +1,302 @@
+/* PCOS Nutrition Plan Styles */
+.pcos-plan {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 30px 80px;
+    color: #333;
+}
+
+.pcos-plan .plan-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #e8d5f5 0%, #f5d5e0 50%, #fde8d0 100%);
+    border-radius: 16px;
+}
+
+.pcos-plan .plan-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #5a3d6b;
+    margin-bottom: 10px;
+}
+
+.pcos-plan .plan-header .subtitle {
+    font-size: 15px;
+    color: #7a5a8a;
+    line-height: 1.8;
+}
+
+.pcos-plan .plan-header .date-tag {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 16px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 20px;
+    font-size: 13px;
+    color: #8a6a9a;
+}
+
+/* Profile Card */
+.pcos-plan .profile-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 4px solid #c084d8;
+}
+
+.pcos-plan .profile-card h2 {
+    font-size: 22px;
+    color: #5a3d6b;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.pcos-plan .profile-card .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.pcos-plan .profile-card .tag-list li {
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.pcos-plan .tag-purple { background: #f0e4f7; color: #6b3fa0; }
+.pcos-plan .tag-red { background: #fde4e4; color: #b04040; }
+.pcos-plan .tag-orange { background: #fef0e0; color: #b07020; }
+.pcos-plan .tag-blue { background: #e0eef8; color: #3060a0; }
+
+/* Section Cards */
+.pcos-plan .section-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.pcos-plan .section-card h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f0e4f7;
+}
+
+.pcos-plan .section-card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #5a3d6b;
+    margin: 20px 0 10px;
+}
+
+.pcos-plan .section-card p,
+.pcos-plan .section-card li {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #444;
+}
+
+.pcos-plan .section-card ul {
+    padding-left: 20px;
+}
+
+.pcos-plan .section-card ul li {
+    margin-bottom: 6px;
+}
+
+/* Color-coded section headers */
+.pcos-plan .color-nutrition h2 { color: #2e7d32; border-color: #c8e6c9; }
+.pcos-plan .color-lifestyle h2 { color: #e65100; border-color: #ffe0b2; }
+.pcos-plan .color-smoking h2 { color: #b71c1c; border-color: #ffcdd2; }
+.pcos-plan .color-stress h2 { color: #1565c0; border-color: #bbdefb; }
+.pcos-plan .color-exercise h2 { color: #6a1b9a; border-color: #e1bee7; }
+.pcos-plan .color-meeting h2 { color: #00695c; border-color: #b2dfdb; }
+
+/* Meal Plan Table */
+.pcos-plan .meal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.pcos-plan .meal-table th {
+    background: #f0e4f7;
+    color: #5a3d6b;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.pcos-plan .meal-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 1.7;
+    vertical-align: top;
+}
+
+.pcos-plan .meal-table tr:hover td {
+    background: #faf6fd;
+}
+
+/* Meeting Card */
+.pcos-plan .meeting-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.pcos-plan .meeting-member {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #e8e8e8;
+    transition: transform 0.2s;
+}
+
+.pcos-plan .meeting-member:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.pcos-plan .meeting-member .role {
+    font-size: 13px;
+    color: #fff;
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.pcos-plan .meeting-member .role-gyno { background: #e91e63; }
+.pcos-plan .meeting-member .role-nutrition { background: #4caf50; }
+.pcos-plan .meeting-member .role-endo { background: #ff9800; }
+.pcos-plan .meeting-member .role-psych { background: #2196f3; }
+.pcos-plan .meeting-member .role-tcm { background: #795548; }
+
+.pcos-plan .meeting-member h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.pcos-plan .meeting-member p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Timeline */
+.pcos-plan .timeline {
+    position: relative;
+    padding-left: 30px;
+    margin-top: 15px;
+}
+
+.pcos-plan .timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    bottom: 5px;
+    width: 3px;
+    background: #e1bee7;
+    border-radius: 2px;
+}
+
+.pcos-plan .timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.pcos-plan .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 6px;
+    width: 13px;
+    height: 13px;
+    background: #ab47bc;
+    border-radius: 50%;
+    border: 3px solid #f0e4f7;
+}
+
+.pcos-plan .timeline-item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #5a3d6b;
+    margin-bottom: 5px;
+}
+
+.pcos-plan .timeline-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Highlight Box */
+.pcos-plan .highlight-box {
+    background: #fff8e1;
+    border-left: 4px solid #ffc107;
+    padding: 15px 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #5d4037;
+}
+
+/* Disclaimer */
+.pcos-plan .disclaimer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 13px;
+    color: #999;
+    border-top: 1px solid #eee;
+}
+
+/* RWD */
+@media (max-width: 768px) {
+    .pcos-plan {
+        padding: 20px 16px 60px;
+    }
+    .pcos-plan .plan-header h1 {
+        font-size: 24px;
+    }
+    .pcos-plan .section-card {
+        padding: 20px;
+    }
+    .pcos-plan .profile-card .tag-list {
+        gap: 8px;
+    }
+    .pcos-plan .profile-card .tag-list li {
+        font-size: 13px;
+        padding: 6px 14px;
+    }
+    .pcos-plan .meeting-grid {
+        grid-template-columns: 1fr;
+    }
+    .pcos-plan .meal-table {
+        font-size: 13px;
+    }
+    .pcos-plan .meal-table th,
+    .pcos-plan .meal-table td {
+        padding: 8px 10px;
+    }
+}
