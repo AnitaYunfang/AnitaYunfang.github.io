@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寶可夢卡牌組牌器 | Pokémon Deck Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>寶可夢卡牌組牌器</h1>
+        <p class="subtitle">Pokémon TCG Deck Builder</p>
+    </header>
+
+    <nav class="tab-nav">
+        <button class="tab-btn active" data-tab="collection">我的收藏</button>
+        <button class="tab-btn" data-tab="deck">我的牌組</button>
+        <button class="tab-btn" data-tab="guide">對戰指南</button>
+    </nav>
+
+    <main>
+        <!-- Collection Tab -->
+        <section id="collection" class="tab-content active">
+            <div class="section-header">
+                <h2>我擁有的卡牌 <span id="collection-count"></span></h2>
+                <div class="filters">
+                    <select id="type-filter">
+                        <option value="all">全部屬性</option>
+                    </select>
+                    <select id="category-filter">
+                        <option value="all">全部類型</option>
+                        <option value="pokemon">寶可夢</option>
+                        <option value="trainer">訓練家</option>
+                        <option value="energy">能量</option>
+                    </select>
+                </div>
+            </div>
+            <div id="collection-grid" class="card-grid"></div>
+        </section>
+
+        <!-- Deck Tab -->
+        <section id="deck" class="tab-content">
+            <div class="deck-controls">
+                <h2>我的牌組 <span id="deck-count">0/60</span></h2>
+                <div class="deck-actions">
+                    <button id="auto-build-btn" class="btn btn-primary">自動組最強牌組</button>
+                    <button id="clear-deck-btn" class="btn btn-danger">清空牌組</button>
+                </div>
+            </div>
+            <div id="deck-stats" class="deck-stats"></div>
+            <div id="deck-sections"></div>
+        </section>
+
+        <!-- Guide Tab -->
+        <section id="guide" class="tab-content">
+            <div class="guide-content" id="guide-content"></div>
+        </section>
+    </main>
+
+    <div id="card-modal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="cards-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
